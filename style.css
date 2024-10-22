@@ -164,6 +164,17 @@
 
 .typing {
   color: var(--skin-color);
+  position: relative;
+}
+
+.typing::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .home-text {
@@ -483,6 +494,7 @@
   flex: 0 0 50%;
   max-width: 50%;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .portfolio-item-inner {
@@ -490,11 +502,16 @@
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.05s;
 }
 
 .portfolio-img img {
   width: 100%;
   display: block;
+}
+
+.portfolio-img img:hover{
+  transform: scale(1.03);
 }
 
 /* CONTACT */
@@ -580,4 +597,8 @@
 .form-group .btn{
   height: 5rem;
   padding: 0 5rem;
+}
+
+.form-group .btn a{
+  color: var(--text-black-900);
 }
