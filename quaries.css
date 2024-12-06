@@ -5,28 +5,28 @@
     left: -27rem;
   }
 
-  .aside.open{
+  .aside.open {
     left: 0;
   }
 
-  .nav-toggle-box{
+  .nav-toggle-box {
     display: flex;
     left: 3rem;
   }
 
-  .aside .nav-toggle-box.open{
+  .aside .nav-toggle-box.open {
     left: 30rem;
   }
 
-  .section{
+  .section {
     left: 0;
   }
-  
-  .container{
+
+  .container {
     padding-top: 7rem;
   }
 
-  .section.open{
+  .section.open {
     left: 27rem;
   }
 
@@ -48,12 +48,12 @@
   }
 
   .home-image::after {
-  left: 2rem;
-  top: 4rem;
-}
-.home-image::before {
-  display: none;
-}
+    left: 2rem;
+    top: 4rem;
+  }
+  .home-image::before {
+    display: none;
+  }
   .service-item,
   .contact-info-item {
     flex: 0 0 50%;
@@ -80,10 +80,10 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .section{
+  .section {
     position: relative;
   }
-  .aside{
+  .aside {
     display: none;
   }
 }

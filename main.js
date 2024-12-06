@@ -31,15 +31,15 @@ function setActiveStyle(color) {
 // MODE SWICHTER //
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
-    dayNight.querySelector("i").classList.toggle("fa-moom");
+  dayNight.querySelector("i").classList.toggle("fa-moom");
   dayNight.querySelector("i").classList.toggle("fa-sun");
   document.body.classList.toggle("light");
 });
 window.addEventListener("load", () => {
   if (document.body.classList.contains("dark")) {
-      dayNight.querySelector("i").classList.add("fa-moon");
-    } else {
-      dayNight.querySelector("i").classList.add("fa-sun");
+    dayNight.querySelector("i").classList.add("fa-moon");
+  } else {
+    dayNight.querySelector("i").classList.add("fa-sun");
   }
 });
 
@@ -123,3 +123,24 @@ function asideSectionToggleBtn() {
     allSection[i].classList.toggle("open");
   }
 }
+
+// Form Validation
+const form = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const time = document.getElementById("time").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name && email && message && time) {
+    formMessage.textContent = "Thank you for reaching out!";
+    formMessage.style.color = "green";
+    form.reset();
+  } else {
+    formMessage.textContent = "Please fill in all fields.";
+    formMessage.style.color = "red";
+  }
+});

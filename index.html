@@ -72,6 +72,7 @@
       <div class="main-content">
         <section class="home active section" id="home">
           <div class="container">
+            <div class="homes-img"></div>
             <div class="row">
               <div class="home-info padd-15">
                 <h3 class="hello">
@@ -390,9 +391,7 @@
                   <a
                     href="https://github.com/Jayb-oy17/Medilab"
                     class="portfolio-img">
-                    <img
-                      src="img/projects/2024-11-03.png"
-                      alt="" />
+                    <img src="img/projects/2024-11-03.png" alt="" />
                   </a>
                 </div>
               </div>
@@ -437,56 +436,21 @@
               LET'S BUILD SOMETHING AMAZING TOGETHER
             </h4>
             <div class="row">
-              <div class="contact-form padd-15">
-                <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Name" />
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email" />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Subject" />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <button class="btn" type="submit">
-                        <a href="ajiboladiekola16@gmail.com">Send Message</a>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required />
+                <input type="datetime-local" id="time" required />
+                <textarea
+                  id="message"
+                  placeholder="Your Message"
+                  required></textarea>
+                <button type="submit" class="contact-btn">Send Message</button>
+              </form>
+              <p id="formMessage"></p>
             </div>
           </div>
         </section>
