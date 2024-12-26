@@ -46,8 +46,8 @@ window.addEventListener("load", () => {
 // TYPING ANIMATION //
 var typed = new Typed(".typing", {
   strings: ["Web Designer", "Wed Editor", "Wed Developer", "React App Builder"],
-  typespeed: 100,
-  BackSpeed: 60,
+  typespeed: 3000,
+  BackSpeed: 3000,
   loop: true,
 });
 
@@ -105,7 +105,6 @@ function updateNav(element) {
 }
 document.querySelector(".hire-me").addEventListener("click", function () {
   const sectionIndex = this.getAttribute("data-section-index");
-  //   console.log(sectionIndex);
   showSection(this);
   updateNav(this);
   removeBackSection();

@@ -159,6 +159,7 @@
 .hello {
   font-size: 3rem;
   margin: 15px 0;
+  color: var(--bg-black-100);
 }
 
 .name {
@@ -171,6 +172,7 @@
 .profession {
   font-size: 3rem;
   margin: 15px 0;
+  color: var(--bg-black-100);
 }
 
 .typing {
@@ -191,7 +193,7 @@
 .home-text {
   font-size: 2rem;
   margin-bottom: 7rem;
-  color: var(--text-black-700);
+  color: var(--bg-black-100);
 }
 
 /* ABOUT */
