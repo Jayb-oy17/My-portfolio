@@ -44,10 +44,10 @@ window.addEventListener("load", () => {
 });
 
 // TYPING ANIMATION //
-var typed = new Typed(".typing", {
-  strings: ["Web Designer", "Wed Editor", "Wed Developer", "React App Builder"],
-  typespeed: 3000,
-  BackSpeed: 3000,
+let typed = new Typed(".typing", {
+  strings: ["Web Designer", "Web Editor", "Web Developer", "React App Builder"],
+  typeSpeed: 100,
+  backSpeed: 50,
   loop: true,
 });
 
@@ -143,3 +143,11 @@ form.addEventListener("submit", (e) => {
     formMessage.style.color = "red";
   }
 });
+
+// PRELOADER
+const preloader = document.querySelector("#preloader");
+if (preloader) {
+  window.addEventListener("load", () => {
+    preloader.remove();
+  });
+}
