@@ -240,7 +240,7 @@ body {
 #preloader:after {
   content: "";
   position: absolute;
-  border: 4px solid #1854b4;
+  border: 4px solid var(--skin-color);
   border-radius: 50%;
   animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
