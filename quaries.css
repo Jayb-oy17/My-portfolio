@@ -37,6 +37,12 @@
   }
 }
 
+@media (max-height:500px){
+  .aside .logo{
+    display: none;
+  }
+}
+
 @media (max-width: 940px) {
   .home .home-info {
     flex: 0 0 100%;
