@@ -465,12 +465,12 @@
   font-weight: 600;
 }
 
-.portfolio-heading a{
+.portfolio-heading a {
   color: var(--text-black-900);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.portfolio-heading a:hover{
+.portfolio-heading a:hover {
   color: var(--skin-color);
 }
 
@@ -539,41 +539,22 @@
   color: var(--text-black-700);
 }
 
-#contactForm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#name,
-#email,
-#time {
-  width: 100%;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  margin-bottom: 2rem;
-  border-radius: 5px;
-}
-
-#message {
-  width: 100%;
-  height: 20rem;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  margin-bottom: 2rem;
-  border-radius: 5px;
-}
-.contact-btn {
-  width: 20rem;
-  background-color: var(--skin-color);
-  border: none;
-  padding: 15px;
+.contact-titled {
   color: var(--text-black-700);
-  border-radius: 2rem;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 2rem;
 }
 
-#formMessage {
-  font-size: 2rem;
-  margin: auto;
+.contactIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contactIconBox i {
+  font-size: 2.5rem;
+  color: var(--skin-color);
 }

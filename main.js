@@ -123,27 +123,6 @@ function asideSectionToggleBtn() {
   }
 }
 
-// Form Validation
-const form = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const time = document.getElementById("time").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  if (name && email && message && time) {
-    formMessage.textContent = "Thank you for reaching out!";
-    formMessage.style.color = "green";
-    form.reset();
-  } else {
-    formMessage.textContent = "Please fill in all fields.";
-    formMessage.style.color = "red";
-  }
-});
-
 // PRELOADER
 const preloader = document.querySelector("#preloader");
 if (preloader) {
